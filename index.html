@@ -5,24 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JITSU - Team management</title>
     <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="logo"></div>
-      <input id="url" />
-      <button onclick="setUrl()">OK</button>
-      <iframe
-        name="frame"
-        src="http://www.google.com"
-        height="480"
-        width="640"
-      ></iframe>
+
+      <span class="text">
+        If you are Interested in this <strong>domain</strong>, please
+        <a href="mailto:felipegigamail@gmail.com?subject=Domínio">mail me</a>.
+      </span>
     </div>
   </body>
-  <script>
-    const setUrl = () => {
-      const inputUrl = document.getElementById("url");
-      window.frames["frame"].location.replace(inputUrl.value);
-    };
-  </script>
 </html>
