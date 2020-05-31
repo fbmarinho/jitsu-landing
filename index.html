@@ -9,8 +9,20 @@
   <body>
     <div class="container">
       <div class="logo"></div>
-
-      <iframe src="http://www.google.com" height="480" width="640"></iframe>
+      <input id="url" />
+      <button onclick="setUrl()">OK</button>
+      <iframe
+        name="frame"
+        src="http://www.google.com"
+        height="480"
+        width="640"
+      ></iframe>
     </div>
   </body>
+  <script>
+    const setUrl = () => {
+      const inputUrl = document.getElementById("url");
+      window.frames["frame"].location.replace(inputUrl.value);
+    };
+  </script>
 </html>
